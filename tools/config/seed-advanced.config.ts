@@ -22,16 +22,16 @@ export class SeedAdvancedConfig extends SeedConfig {
       bootstrap   = 'hot_loader_main';
     } else if (this.TARGET_MOBILE_HYBRID) {
       bootstrap   = 'main.mobile.hybrid'; // Cordova
-    } 
+    }
     this.BOOTSTRAP_MODULE = bootstrap;
-    
-    this.APP_TITLE = 'Angular 2 Seed Advanced';
+
+    this.APP_TITLE = 'Count Them Up';
 
     // Dev
     if (this.TARGET_DESKTOP) {
       // desktop configuration
       this.APP_BASE = ''; // paths must remain relative
-      
+
       this.SYSTEM_CONFIG.paths['ng2-translate/*'] = `${this.APP_BASE}node_modules/ng2-translate/*`;
       this.SYSTEM_CONFIG.paths['@ngrx/store'] = `${this.APP_BASE}node_modules/@ngrx/store/dist/index`;
       this.SYSTEM_CONFIG.paths['reflect-metadata'] = `${this.APP_BASE}node_modules/reflect-metadata/Reflect`;
@@ -45,8 +45,8 @@ export class SeedAdvancedConfig extends SeedConfig {
     this.SYSTEM_CONFIG.paths['angulartics2'] = `${this.APP_BASE}node_modules/angulartics2/index`;
     this.SYSTEM_CONFIG.paths['angulartics2/*'] = `${this.APP_BASE}node_modules/angulartics2/*`;
     this.SYSTEM_CONFIG.paths['lodash'] = `${this.APP_BASE}node_modules/lodash/index`;
-    this.SYSTEM_CONFIG.paths['ngrx-store-router'] = `${this.APP_BASE}node_modules/ngrx-store-router/index`;    
-    
+    this.SYSTEM_CONFIG.paths['ngrx-store-router'] = `${this.APP_BASE}node_modules/ngrx-store-router/index`;
+
     // Prod
     this.SYSTEM_BUILDER_CONFIG.paths['angulartics2'] = `node_modules/angulartics2/index.js`;
     this.SYSTEM_BUILDER_CONFIG.paths['lodash'] = `node_modules/lodash/index.js`;

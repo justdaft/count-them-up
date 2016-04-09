@@ -1,5 +1,5 @@
 {
-  "name": "angular2-seed-advanced",
+  "name": "count-them-up",
   "version": "0.0.0",
   "description": "Advanced seed for Angular 2 apps",
   "repository": {
@@ -36,11 +36,9 @@
     "webdriver-update": "webdriver-manager update"
   },
   "author": "Minko Gechev <mgechev>",
-  "contributors": [
-    {
-      "name": "Nathan Walker <NathanWalker>"
-    }
-  ],
+  "contributors": [{
+    "name": "Nathan Walker <NathanWalker>"
+  }],
   "license": "MIT",
   "devDependencies": {
     "async": "^1.4.2",
@@ -131,6 +129,14 @@
     "reflect-metadata": "0.1.2",
     "rxjs": "5.0.0-beta.4",
     "systemjs": "~0.19.25",
-    "zone.js": "^0.6.6"
+    "zone.js": "^0.6.6",
+    "@angular2-material/button": "^2.0.0-alpha.2",
+    "@angular2-material/card": "^2.0.0-alpha.2",
+    "@angular2-material/checkbox": "^2.0.0-alpha.2",
+    "@angular2-material/core": "^2.0.0-alpha.2",
+    "@angular2-material/progress-circle": "^2.0.0-alpha.2",
+    "@angular2-material/radio": "^2.0.0-alpha.2",
+    "@angular2-material/sidenav": "^2.0.0-alpha.2",
+    "@angular2-material/toolbar": "^2.0.0-alpha.2"
   }
 }

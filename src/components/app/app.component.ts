@@ -11,6 +11,10 @@ import {NavbarComponent} from './navbar.component';
 import {ToolbarComponent} from './toolbar.component';
 import {HomeComponent} from '../home/home.component';
 import {AboutComponent} from '../about/about.component';
+import {AmyComponent} from '../amy/amy.component';
+import {OscarComponent} from '../oscar/oscar.component';
+import {DexterComponent} from '../dexter/dexter.component';
+import {ActivitiesComponent} from '../activities/activities.component';
 
 @RouteComponent({
   selector: 'sd-app',
@@ -21,7 +25,11 @@ import {AboutComponent} from '../about/about.component';
 })
 @RouteConfig([
   { path: '/', component: HomeComponent, as: 'Home' },
-  { path: '/about', component: AboutComponent, as: 'About' }
+  { path: '/about', component: AboutComponent, as: 'About' },
+  { path: '/amy', component: AmyComponent, as: 'Amy' },
+  { path: '/oscar', component: OscarComponent, as: 'Oscar' },
+  { path: '/dexter', component: DexterComponent, as: 'Dexter' },
+  { path: '/activities', component: ActivitiesComponent, as: 'Activities' }
 ])
 export class AppComponent {
   constructor(public analytics: AnalyticsService) {

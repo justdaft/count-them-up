@@ -26,7 +26,7 @@ export class SeedConfig {
 
   BOOTSTRAP_MODULE     = this.ENABLE_HOT_LOADING ? 'hot_loader_main' : 'main';
 
-  APP_TITLE            = 'My Angular2 App';
+  APP_TITLE            = 'Count Them Up';
 
   APP_SRC              = 'src';
   ASSETS_SRC           = `${this.APP_SRC}/assets`;
