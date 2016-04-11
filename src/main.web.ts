@@ -14,6 +14,7 @@ import {ANALYTICS_PROVIDERS} from './frameworks/analytics.framework/index';
 import {MultilingualService} from './frameworks/i18n.framework/index';
 import {APP_PROVIDERS, AppConfigService} from './frameworks/app.framework/index';
 import {AppComponent} from './components/app/app.component';
+
 // custom i18n language support
 MultilingualService.SUPPORTED_LANGUAGES = AppConfigService.SUPPORTED_LANGUAGES;
 

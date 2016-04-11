@@ -1,2 +1,154 @@
+<div class="demo-card-container">
+    <md-card>
+        <!--<img md-card-avatar >-->
+        <md-card-title-group>
+            <md-card-title>{{kid.name}}</md-card-title>
+            <md-card-subtitle>Age: {{kid.age}}</md-card-subtitle>
+            <md-card-subtitle>Totals</md-card-subtitle>
+            <!--<img md-card-md-image src="./../../assets/princess.jpeg">-->
+        </md-card-title-group>
+        <md-card-content>
+            <li *ngFor="#result of results">{{ result.type | translate }}, {{ result.count }} </li>
+            <!--<table>
+                  
+                    <td *ngFor="#result of results">{{ result.type | translate }}, {{ result.count }}</td>
+               
+         
+            </table>-->
+        </md-card-content>
+        <!--<md-card-content>
+            {{cardDetails.cardContent}}
+            <table>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>Activity</th>
+                    <th class="name" *ngFor="#day of days">{{day}}</th>
+                    <th>&nbsp;</th>
+                </tr>
 
-<h1>Amy</h1>
+                <tr *ngFor="#activity of kid.activities #i = index">
+                    <td style="background-color: {{colors[i]}}">&nbsp;</td>
+                    <td>{{activity.type}}</td>
+                    <td class="smiley" *ngFor="#data of activity.data">
+                        <span [ngSwitch]="data.result">
+                    <span *ngSwitchWhen="true">
+                        <i style="color: {{colors[i]}}" class="fa fa-smile-o fa-2x"></i>
+                    </span>
+                        <span *ngSwitchWhen="false">
+                        <i style="color: {{colors[i]}}" class="fa fa-frown-o fa-2x"></i>
+                    </span>
+                        </span>
+                    </td>
+                </tr>
+            </table>
+        </md-card-content>-->
+        <md-card-actions>
+            <!--<button md-button>LIKE</button>
+            <button md-button>SHARE</button>-->
+        </md-card-actions>
+    </md-card>
+
+    <!--<ul *ngFor="#activity of kid.activities #i = index">-->
+    <md-card *ngFor="#activity of kid.activities #i = index">
+        <md-card-title-group>
+            <md-card-title>{{activity.type | translate}}</md-card-title>
+        </md-card-title-group>
+        <md-card-content>
+            <div style="background-color: {{colors[i]}}">&nbsp;</div>
+            <table>
+                <tr>
+                    <th style="background-color: {{colors[i]}}">&nbsp;</th>
+                    <th class="name" *ngFor="#day of days">{{day}}</th>
+                    <th>&nbsp;</th>
+                </tr>
+                <tr>
+                    <td style="background-color: {{colors[i]}}">&nbsp;</td>
+                    <td class="smiley" *ngFor="#data of activity.data">
+                        <span [ngSwitch]="data.result">
+                    <span *ngSwitchWhen="true">
+                        <i style="color: {{colors[i]}}" class="fa fa-smile-o fa-2x"></i>
+                    </span>
+                        <span *ngSwitchWhen="false">
+                        <i style="color: {{colors[i]}}" class="fa fa-frown-o fa-2x"></i>
+                    </span>
+                        </span>
+                    </td>
+                    <td class="smiley">
+                        <button (click)="addDay(activity.type)" style="background-color: {{colors[i]}}" class="btn btn-default"><i class="fa fa-plus"></i></button>
+                    </td>
+                </tr>
+            </table>
+
+        </md-card-content>
+    </md-card>
+    <!--</ul>-->
+    <!--<md-card>
+        <md-card-title-group>
+            <md-card-title>{{cardDetails.cardTitle}}</md-card-title>
+            <md-card-subtitle>{{cardDetails.cardSubtitle}}</md-card-subtitle>
+        </md-card-title-group>
+        <md-card-content>
+            {{cardDetails.cardContent}}
+            <table>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>Activity</th>
+                    <th class="name" *ngFor="#day of days">{{day}}</th>
+                    <th>&nbsp;</th>
+                </tr>
+
+                <tr *ngFor="#activity of kid.activities #i = index">
+                    <td style="background-color: {{colors[i]}}">&nbsp;</td>
+                    <td>{{activity.type}}</td>
+                    <td class="smiley" *ngFor="#data of activity.data">
+                        <span [ngSwitch]="data.result">
+                    <span *ngSwitchWhen="true">
+                        <i style="color: {{colors[i]}}" class="fa fa-smile-o fa-2x"></i>
+                    </span>
+                        <span *ngSwitchWhen="false">
+                        <i style="color: {{colors[i]}}" class="fa fa-frown-o fa-2x"></i>
+                    </span>
+                        </span>
+                    </td>
+                </tr>
+            </table>
+        </md-card-content>
+        <md-card-actions>
+        </md-card-actions>
+    </md-card>
+    </ul>
+        <md-card>
+        <md-card-title-group>
+            <md-card-title>{{cardDetails.cardTitle}}</md-card-title>
+            <md-card-subtitle>{{cardDetails.cardSubtitle}}</md-card-subtitle>
+        </md-card-title-group>
+        <md-card-content>
+            {{cardDetails.cardContent}}
+            <table>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>Activity</th>
+                    <th class="name" *ngFor="#day of days">{{day}}</th>
+                    <th>&nbsp;</th>
+                </tr>
+
+                <tr *ngFor="#activity of kid.activities #i = index">
+                    <td style="background-color: {{colors[i]}}">&nbsp;</td>
+                    <td>{{activity.type}}</td>
+                    <td class="smiley" *ngFor="#data of activity.data">
+                        <span [ngSwitch]="data.result">
+                    <span *ngSwitchWhen="true">
+                        <i style="color: {{colors[i]}}" class="fa fa-smile-o fa-2x"></i>
+                    </span>
+                        <span *ngSwitchWhen="false">
+                        <i style="color: {{colors[i]}}" class="fa fa-frown-o fa-2x"></i>
+                    </span>
+                        </span>
+                    </td>
+                </tr>
+            </table>
+        </md-card-content>
+        <md-card-actions>
+        </md-card-actions>
+    </md-card>-->
+</div>

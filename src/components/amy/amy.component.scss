@@ -1,0 +1,62 @@
+.demo-card-container {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 16px;
+
+  md-card {
+    margin: 0 16px 16px 0;
+    width: 100%;
+  }
+
+  img {
+    background-color: gray;
+  }
+}
+
+.demo-card-blue {
+  background-color: #B0BECC;
+
+  md-card-actions {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+table input {
+   width:35px; 
+}
+
+/*table td {
+    padding: 2px 2px;
+}  */
+
+/*table {
+    width: 100%;
+}*/
+
+td {
+   text-align: left;
+   
+//    border-bottom: 1px solid #ddd;
+//    border-left: 1px solid #ddd;
+} 
+
+.smiley {
+   text-align: center;
+   
+//    border-bottom: 1px solid #ddd;
+//    border-left: 1px solid #ddd;
+} 
+
+// table {
+//     border: 1px solid black;
+// }   
+
+/*th, td {
+    border-bottom: 1px solid #ddd;
+}*/
+
+.name {
+    width: 60px !important;
+    padding-left:5px;
+}

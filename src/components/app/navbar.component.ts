@@ -15,7 +15,9 @@ export class NavbarComponent {
     // TODO: remove when {N} router supports active states
     public activeLink: any = {
         home: true,
-        about: false,
+        amy: false,
+        oscar: false,
+        dexter: false,
         activities: false
     };
 

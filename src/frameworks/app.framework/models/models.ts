@@ -1,11 +1,19 @@
 export interface Kid {
     id: number;
     name: string;
-    data: Array<Activity>;
+    age: number;
+    activities: Array<any>;
 }
  
 export interface Activity {
     type: string;
-    date: any;
-    result: boolean;
+    data: Array<any>;
+}
+
+export interface CardDetail {
+    cardTitle: string;
+    cardSubtitle?: string;
+    cardContent?: string;
+    cardImage?: string;
+    cardAvatar?: string;
 }
